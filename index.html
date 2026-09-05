@@ -201,14 +201,6 @@ section{width:100%;padding:5.5rem 5%}
 .srv-link{display:inline-flex;align-items:center;gap:5px;font-size:0.78rem;color:var(--accent);text-decoration:none;border:1px solid rgba(0,245,255,0.25);padding:0.3rem 0.8rem;border-radius:6px;transition:all 0.2s}
 .srv-link:hover{background:rgba(0,245,255,0.06)}
 
-/* STATS */
-#stats-section{background:var(--bg2)}
-.stats-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem}
-.stat-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.75rem;text-align:center;transition:all 0.2s}
-.stat-card:hover{border-color:rgba(0,245,255,0.2);transform:translateY(-2px)}
-.stat-num{font-family:'JetBrains Mono',monospace;font-size:2.2rem;font-weight:700;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:block;margin-bottom:0.4rem}
-.stat-lbl{font-size:0.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.06em}
-
 /* RESUME */
 #resume{background:var(--bg)}
 .resume-card{max-width:700px;margin:0 auto;background:linear-gradient(135deg,rgba(0,245,255,0.05),rgba(123,97,255,0.08));border:1px solid rgba(0,245,255,0.2);border-radius:24px;padding:3rem;text-align:center;position:relative;overflow:hidden}
@@ -474,7 +466,7 @@ body.light nav{background:rgba(240,244,255,0.85)}
         <div class="exp-dot"></div>
         <div class="ec-date">Apr 2026 — Jul 2026</div>
         <div class="ec-role">Data Science &amp; Analytics Intern</div>
-        <div class="ec-co">Amdox Technologies · Remote <span class="chip">COMPLETED</span></div>
+        <div class="ec-co">Amdox Technologies · Remote</div>
         <ul class="ec-ul">
           <li>Built a customer segmentation and churn prediction model (NeuralRetail, 0.90 ROC-AUC).</li>
           <li>Developed a medical diagnosis system covering 41 diseases with top-3 predictions (MediSense AI, 99.72% accuracy).</li>
@@ -636,15 +628,6 @@ body.light nav{background:rgba(240,244,255,0.85)}
         <div class="cert-badge">✓ DONE</div>
       </div>
       <div class="cert-card reveal">
-        <div class="cert-icon">🤖</div>
-        <div class="cert-info">
-          <div class="issuer">TCS iON / MPIT CoE</div>
-          <div class="cname">Generative AI Essentials</div>
-          <div class="cdate"><i class="far fa-calendar"></i> Jun 2026</div>
-        </div>
-        <div class="cert-badge">✓ DONE</div>
-      </div>
-      <div class="cert-card reveal">
         <div class="cert-icon">📊</div>
         <div class="cert-info">
           <div class="issuer">Deloitte · Forage</div>
@@ -664,6 +647,15 @@ body.light nav{background:rgba(240,244,255,0.85)}
         </div>
         <div class="cert-badge">✓ DONE</div>
       </div>
+      <div class="cert-card reveal">
+        <div class="cert-icon">🤖</div>
+        <div class="cert-info">
+          <div class="issuer">TCS iON / MPIT CoE</div>
+          <div class="cname">Generative AI Essentials</div>
+          <div class="cdate"><i class="far fa-calendar"></i> Jun 2026</div>
+        </div>
+        <div class="cert-badge">✓ DONE</div>
+      </div>
     </div>
   </div>
 </section>
@@ -680,7 +672,7 @@ body.light nav{background:rgba(240,244,255,0.85)}
       <div class="ach-card reveal"><span class="ach-icon">🏆</span><div class="ach-title">99.90% Model Accuracy</div><div class="ach-desc">Achieved 99.90% accuracy and 0.9829 AUC on Financial Fraud Detection using Random Forest with SMOTE.</div></div>
       <div class="ach-card reveal"><span class="ach-icon">📊</span><div class="ach-title">307K+ Records Analyzed</div><div class="ach-desc">LoanSight AI processes 307,511 real bank applications. Built and deployed end-to-end with SQL Explorer.</div></div>
       <div class="ach-card reveal"><span class="ach-icon">🩺</span><div class="ach-title">AI Medical Diagnosis</div><div class="ach-desc">MediSense AI diagnoses 41 diseases from 132 symptoms with 99.72% CV accuracy and explainable AI.</div></div>
-      <div class="ach-card reveal"><span class="ach-icon">📚</span><div class="ach-title">10 Certifications</div><div class="ach-desc">Deep Learning, Mathematics for ML (×2), Generative AI, industry simulations from Deloitte, Tata, and more.</div></div>
+      <div class="ach-card reveal"><span class="ach-icon">📚</span><div class="ach-title">Certifications</div><div class="ach-desc">Deep Learning, Mathematics for ML (×2), Generative AI, industry simulations from Deloitte, Tata, and more.</div></div>
       <div class="ach-card reveal"><span class="ach-icon">💻</span><div class="ach-title">22 Kaggle Notebooks</div><div class="ach-desc">Active Kaggle profile with 22 public notebooks. Consistent open-source contributions and data work.</div></div>
     </div>
   </div>
@@ -704,34 +696,17 @@ body.light nav{background:rgba(240,244,255,0.85)}
   </div>
 </section>
 
-<!-- STATS -->
-<section id="stats-section">
-  <div class="si">
-    <div class="sec-head reveal">
-      <span class="sec-num">09. Stats</span>
-      <h2 class="sec-title">By The <span class="g">Numbers</span></h2>
-    </div>
-    <div class="stats-grid">
-      <div class="stat-card reveal"><span class="stat-num" data-target="4">0</span><div class="stat-lbl">Projects Deployed</div></div>
-      <div class="stat-card reveal"><span class="stat-num" data-target="22">0</span><div class="stat-lbl">Kaggle Notebooks</div></div>
-      <div class="stat-card reveal"><span class="stat-num" data-target="10">0</span><div class="stat-lbl">Certifications</div></div>
-      <div class="stat-card reveal"><span class="stat-num" data-target="3">0</span><div class="stat-lbl">Internships</div></div>
-      <div class="stat-card reveal"><span class="stat-num" data-target="100">0</span><div class="stat-lbl">% Commitment</div></div>
-    </div>
-  </div>
-</section>
-
 <!-- RESUME -->
 <section id="resume">
   <div class="si">
     <div class="sec-head reveal">
-      <span class="sec-num">10. Resume</span>
+      <span class="sec-num">9. Resume</span>
       <h2 class="sec-title">My <span class="g">Resume</span></h2>
     </div>
     <div class="resume-card reveal">
       <span class="resume-icon">📄</span>
       <div class="resume-name">Shubham Jaiswal</div>
-      <div class="resume-sub">Data Scientist &amp; ML Engineer · B.Sc. Stats &amp; CS · MGKVP · Noida, India<br>4 Live Projects · 3 Internships · 10 Certifications · 22 Kaggle Notebooks</div>
+      <div class="resume-sub">Data Scientist &amp; ML Engineer · B.Sc. Stats &amp; CS · MGKVP · Varanasi, India<br>4 Live Projects · 3 Internships · 10 Certifications · 22 Kaggle Notebooks</div>
       <div style="display:flex;justify-content:center;gap:0.75rem;flex-wrap:wrap;margin-bottom:2rem">
         <span style="background:rgba(0,245,255,0.08);border:1px solid rgba(0,245,255,0.2);color:var(--accent);padding:0.35rem 1rem;border-radius:100px;font-size:0.8rem">🚀 4 Live Projects</span>
         <span style="background:rgba(123,97,255,0.08);border:1px solid rgba(123,97,255,0.2);color:var(--a2);padding:0.35rem 1rem;border-radius:100px;font-size:0.8rem">💼 3 Internships</span>
@@ -750,14 +725,14 @@ body.light nav{background:rgba(240,244,255,0.85)}
 <section id="contact">
   <div class="si">
     <div class="sec-head reveal">
-      <span class="sec-num">11. Contact</span>
+      <span class="sec-num">10. Contact</span>
       <h2 class="sec-title">Let's Work <span class="g">Together</span></h2>
     </div>
     <div class="contact-wrap">
       <div class="contact-info reveal">
         <h3>Get In Touch</h3>
         <p>I'm open to full-time roles in Data Science, ML Engineering, Data Analytics, Business Analysis, and Risk Analytics across India. I build fast, ship deployed applications, and deliver measurable results. Let's build something great together!</p>
-        <div class="contact-detail"><i class="fas fa-map-marker-alt"></i> Noida, Uttar Pradesh, India</div>
+        <div class="contact-detail"><i class="fas fa-map-marker-alt"></i> Varanasi, Uttar Pradesh, India</div>
         <div class="contact-detail"><i class="fas fa-envelope"></i> shubhjais.in@gmail.com</div>
         <div class="contact-detail"><i class="fas fa-phone"></i> +91 99180 92257</div>
         <div class="contact-detail"><i class="fab fa-linkedin"></i> linkedin.com/in/shubhjais04</div>
@@ -789,7 +764,7 @@ body.light nav{background:rgba(240,244,255,0.85)}
 <!-- FOOTER -->
 <footer>
   <div class="footer-name">SHUBHAM JAISWAL</div>
-  <div class="footer-role">Data Scientist &amp; ML Engineer · B.Sc. Stats &amp; CS (CGPA 7.68) · Noida, India</div>
+  <div class="footer-role">Data Scientist &amp; ML Engineer · B.Sc. Stats &amp; CS (CGPA 7.68) · Varanasi, India</div>
   <ul class="footer-links">
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
@@ -797,7 +772,7 @@ body.light nav{background:rgba(240,244,255,0.85)}
     <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <div class="footer-copy">© 2026 Shubham Jaiswal. Built with ❤️ from Noida, UP</div>
+  <div class="footer-copy">© 2026 Shubham Jaiswal. Built with ❤️ from Varanasi, UP</div>
 </footer>
 
 <!-- SCROLL TOP -->
